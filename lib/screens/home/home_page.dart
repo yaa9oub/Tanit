@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:tanitapp/binding/mainpage_binding.dart';
+import 'package:tanitapp/routes/app_routes.dart';
 import 'package:tanitapp/screens/home/home_controller.dart';
+import 'package:tanitapp/screens/mainpage/mainpage.dart';
 import 'package:tanitapp/style/assets.dart';
 import 'package:tanitapp/style/colors.dart';
 import 'package:tanitapp/style/text.dart';
@@ -64,7 +67,9 @@ class HomePage extends StatelessWidget {
                     ),
                     SecondaryAppButton(
                       title: "تخطي",
-                      onclick: () {},
+                      onclick: () {
+                        Get.toNamed(Routes.mainpage);
+                      },
                     ),
                   ],
                 ),
