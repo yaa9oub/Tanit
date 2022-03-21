@@ -30,10 +30,16 @@ class MainPageButton extends StatelessWidget {
             const SizedBox(
               width: 16,
             ),
-            Text(
-              title,
-              style: AppTextStyle.subTitleTextStyle,
-              textAlign: TextAlign.center,
+            SizedBox(
+              width: 149.w,
+              height: 108.h,
+              child: Center(
+                child: Text(
+                  title,
+                  style: AppTextStyle.mainpagebuttonsTextStyle,
+                  textAlign: TextAlign.center,
+                ),
+              ),
             ),
             const SizedBox(
               width: 14,
