@@ -15,7 +15,9 @@ class GetApp extends StatelessWidget {
       designSize: const Size(375, 812),
       builder: () => GetMaterialApp(
         debugShowCheckedModeBanner: false,
-        initialRoute: Routes.initial,
+        //initialRoute: Routes.initial,
+        initialRoute: Routes.boardingScreen,
+
         defaultTransition: Transition.fade,
         getPages: AppPages.pages,
         enableLog: true,

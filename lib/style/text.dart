@@ -17,4 +17,14 @@ class AppTextStyle {
       fontSize: 32,
       fontFamily: 'Hacen',
       fontWeight: FontWeight.w400);
+      static const descriptionTextStyle = TextStyle(
+      color: AppColors.lightBlueColor,
+      fontSize: 22,
+      fontFamily: 'Hacen',
+      fontWeight: FontWeight.w400);
+       static const warningTextStyle = TextStyle(
+      color: AppColors.redColor,
+      fontSize: 22,
+      fontFamily: 'Hacen',
+      fontWeight: FontWeight.w400);
 }
