@@ -58,16 +58,16 @@ class HomePage extends StatelessWidget {
                     ),
                     SecondaryAppButton(
                       title: "دخول",
-                      onclick: () {
-                        Get.toNamed(Routes.mainpage);
-                      },
+                      onclick: () {},
                     ),
                     const SizedBox(
                       height: 16,
                     ),
                     SecondaryAppButton(
                       title: "تخطي",
-                      onclick: () {},
+                      onclick: () {
+                        Get.toNamed(Routes.mainpage);
+                      },
                     ),
                   ],
                 ),

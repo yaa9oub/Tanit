@@ -19,7 +19,7 @@ class MainPageButton extends StatelessWidget {
       onTap: onclick,
       child: Container(
         width: 343.w,
-        height: 116.h,
+        height: 116,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12),
           color: AppColors.lightGreyColor,
@@ -32,7 +32,7 @@ class MainPageButton extends StatelessWidget {
             ),
             SizedBox(
               width: 149.w,
-              height: 108.h,
+              height: 108,
               child: Center(
                 child: Text(
                   title,

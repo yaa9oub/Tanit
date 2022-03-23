@@ -43,6 +43,84 @@ class BottomNavBar extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Image.asset(
+                  Assets.settings,
+                  color: settingsActiveIcon != null
+                      ? AppColors.primaryColor
+                      : AppColors.secondaryColor,
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Visibility(
+                  visible: !simpledNavBar,
+                  child: Text(
+                    'الإعدادات',
+                    style: settingsActiveIcon != null
+                        ? AppTextStyle.primaryNavBarTextStyle
+                        : AppTextStyle.secondaryNavBarTextStyle,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          InkWell(
+            onTap: () {},
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image.asset(
+                  Assets.notifications,
+                  color: notificationActiveIcon != null
+                      ? AppColors.primaryColor
+                      : AppColors.secondaryColor,
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Visibility(
+                  visible: !simpledNavBar,
+                  child: Text(
+                    'الإشعارات',
+                    style: notificationActiveIcon != null
+                        ? AppTextStyle.primaryNavBarTextStyle
+                        : AppTextStyle.secondaryNavBarTextStyle,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          InkWell(
+            onTap: () {},
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image.asset(
+                  Assets.statistics,
+                  color: statisticsActiveIcon != null
+                      ? AppColors.primaryColor
+                      : AppColors.secondaryColor,
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Visibility(
+                  visible: !simpledNavBar,
+                  child: Text(
+                    'الإحصائيات',
+                    style: statisticsActiveIcon != null
+                        ? AppTextStyle.primaryNavBarTextStyle
+                        : AppTextStyle.secondaryNavBarTextStyle,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          InkWell(
+            onTap: () {},
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image.asset(
                   Assets.home,
                   color: mainPageActiveIcon != null
                       ? AppColors.primaryColor
@@ -58,75 +136,6 @@ class BottomNavBar extends StatelessWidget {
                     style: mainPageActiveIcon != null
                         ? AppTextStyle.primaryNavBarTextStyle
                         : AppTextStyle.secondaryNavBarTextStyle,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          InkWell(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Image.asset(
-                  Assets.statistics,
-                  color: statisticsActiveIcon != null
-                      ? AppColors.primaryColor
-                      : AppColors.secondaryColor,
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-                Visibility(
-                  visible: !simpledNavBar,
-                  child: const Text(
-                    'الإحصائيات',
-                    style: AppTextStyle.secondaryNavBarTextStyle,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          InkWell(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Image.asset(
-                  Assets.notifications,
-                  color: notificationActiveIcon != null
-                      ? AppColors.primaryColor
-                      : AppColors.secondaryColor,
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-                Visibility(
-                  visible: !simpledNavBar,
-                  child: const Text(
-                    'الإشعارات',
-                    style: AppTextStyle.secondaryNavBarTextStyle,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          InkWell(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Image.asset(
-                  Assets.settings,
-                  color: settingsActiveIcon != null
-                      ? AppColors.primaryColor
-                      : AppColors.secondaryColor,
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-                Visibility(
-                  visible: !simpledNavBar,
-                  child: const Text(
-                    'الإعدادات',
-                    style: AppTextStyle.secondaryNavBarTextStyle,
                   ),
                 ),
               ],
