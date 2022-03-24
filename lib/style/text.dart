@@ -17,4 +17,28 @@ class AppTextStyle {
       fontSize: 32,
       fontFamily: 'Hacen',
       fontWeight: FontWeight.w400);
+  static const mainpageTextStyle = TextStyle(
+      color: AppColors.primaryColor,
+      fontSize: 24,
+      height: 1.2,
+      fontFamily: 'Hacen',
+      fontWeight: FontWeight.w400);
+  static const mainpagebuttonsTextStyle = TextStyle(
+      color: AppColors.primaryColor,
+      fontSize: 22,
+      height: 1.6,
+      fontFamily: 'Hacen',
+      fontWeight: FontWeight.w400);
+  static const primaryNavBarTextStyle = TextStyle(
+      color: AppColors.primaryColor,
+      fontSize: 14,
+      height: 1,
+      fontFamily: 'Hacen',
+      fontWeight: FontWeight.w400);
+  static const secondaryNavBarTextStyle = TextStyle(
+      color: AppColors.secondaryColor,
+      fontSize: 14,
+      height: 1,
+      fontFamily: 'Hacen',
+      fontWeight: FontWeight.w400);
 }
