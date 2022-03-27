@@ -50,6 +50,9 @@ class HomePage extends StatelessWidget {
                     ),
                     PrimaryButton(
                       title: "تسجيل حساب جديد",
+                      titleStyle: AppTextStyle.subTitleWhiteTextStyle,
+                      heightButton: 51,
+                      widthButton: 327,
                       onclick: () {},
                     ),
                     const SizedBox(
