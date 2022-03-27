@@ -4,17 +4,27 @@ import 'package:tanitapp/style/colors.dart';
 import 'package:tanitapp/style/text.dart';
 
 class PrimaryButton extends StatelessWidget {
-  const PrimaryButton({Key? key, required this.title, required this.onclick})
+  const PrimaryButton(
+      {Key? key,
+      required this.title,
+       this.onclick,
+      required this.heightButton,
+      required this.widthButton,
+      required this.titleStyle})
       : super(key: key);
   final String title;
-  final VoidCallback onclick;
+  final double heightButton;
+  final double widthButton;
+  final TextStyle titleStyle;
+
+   final VoidCallback? onclick;
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onclick,
       child: Container(
-        width: 327.w,
-        height: 51.h,
+        width: widthButton,
+        height: heightButton,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
           color: AppColors.primaryColor,
@@ -22,7 +32,7 @@ class PrimaryButton extends StatelessWidget {
         child: Center(
           child: Text(
             title,
-            style: AppTextStyle.subTitleWhiteTextStyle,
+            style: titleStyle,
           ),
         ),
       ),

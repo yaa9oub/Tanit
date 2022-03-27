@@ -22,50 +22,55 @@ class HomePage extends StatelessWidget {
               width: size.width,
               height: size.height,
               color: AppColors.whiteColor,
-              child: Column(
-                children: [
-                  SizedBox(
-                    height: 74.h,
-                  ),
-                  const Text(
-                    "مرحبا بك",
-                    style: AppTextStyle.subTitleTextStyle,
-                  ),
-                  const SizedBox(
-                    height: 4,
-                  ),
-                  const Text("في تطبيق تانيت",
-                      style: AppTextStyle.titleTextStyle),
-                  const SizedBox(
-                    height: 55,
-                  ),
-                  Image.asset(
-                    Assets.tanit,
-                    width: 200.w,
-                    height: 298.h,
-                  ),
-                  const SizedBox(
-                    height: 113,
-                  ),
-                  PrimaryButton(
-                    title: "تسجيل حساب جديد",
-                    onclick: () {},
-                  ),
-                  const SizedBox(
-                    height: 16,
-                  ),
-                  SecondaryAppButton(
-                    title: "دخول",
-                    onclick: () {},
-                  ),
-                  const SizedBox(
-                    height: 16,
-                  ),
-                  SecondaryAppButton(
-                    title: "تخطي",
-                    onclick: () {},
-                  ),
-                ],
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    SizedBox(
+                      height: 30.h,
+                    ),
+                    const Text(
+                      "مرحبا بك",
+                      style: AppTextStyle.subTitleTextStyle,
+                    ),
+                    const SizedBox(
+                      height: 4,
+                    ),
+                    const Text("في تطبيق تانيت",
+                        style: AppTextStyle.titleTextStyle),
+                    const SizedBox(
+                      height: 55,
+                    ),
+                    Image.asset(
+                      Assets.tanit,
+                      width: 200.w,
+                      height: 298.h,
+                    ),
+                    const SizedBox(
+                      height: 113,
+                    ),
+                    PrimaryButton(
+                      title: "تسجيل حساب جديد",
+                      titleStyle: AppTextStyle.subTitleWhiteTextStyle,
+                      heightButton: 51,
+                      widthButton: 327,
+                      onclick: () {},
+                    ),
+                    const SizedBox(
+                      height: 16,
+                    ),
+                    SecondaryAppButton(
+                      title: "دخول",
+                      onclick: () {},
+                    ),
+                    const SizedBox(
+                      height: 16,
+                    ),
+                    SecondaryAppButton(
+                      title: "تخطي",
+                      onclick: () {},
+                    ),
+                  ],
+                ),
               ),
             );
           }),

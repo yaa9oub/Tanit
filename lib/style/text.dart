@@ -7,6 +7,12 @@ class AppTextStyle {
       fontSize: 22,
       fontFamily: 'Hacen',
       fontWeight: FontWeight.w400);
+  static const smallButtoneTextStyle = TextStyle(
+      color: AppColors.whiteColor,
+      fontSize: 13,
+      fontFamily: 'Hacen',
+      fontWeight: FontWeight.w400);
+
   static const subTitleWhiteTextStyle = TextStyle(
       color: AppColors.whiteColor,
       fontSize: 22,
@@ -15,6 +21,16 @@ class AppTextStyle {
   static const titleTextStyle = TextStyle(
       color: AppColors.primaryColor,
       fontSize: 32,
+      fontFamily: 'Hacen',
+      fontWeight: FontWeight.w400);
+  static const descriptionTextStyle = TextStyle(
+      color: AppColors.lightBlueColor,
+      fontSize: 22,
+      fontFamily: 'Hacen',
+      fontWeight: FontWeight.w400);
+  static const warningTextStyle = TextStyle(
+      color: AppColors.redColor,
+      fontSize: 22,
       fontFamily: 'Hacen',
       fontWeight: FontWeight.w400);
 }
